@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Chandler Hostetler | Software Developer/IT Specialist">
-    <meta>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-    <title>Chandler Hostetler</title>
-  </head>
-  <body>
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-
-            <div>
-                <a href="#" class="nav__logo">Chandler Hostetler</a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-
-                <ul class="nav__list">
-                    <li class="nav__item"> <a href="#home" class="nav__link active"> Home </a></li>
-                    <li class="nav__item"> <a href="#about" class="nav__link"> About </a></li>
-                    <li class="nav__item"> <a href="#skills" class="nav__link"> Skills </a></li>
-                    <li class="nav__item"> <a href="#services" class="nav__link"> Services </a></li>
-                    <li class="nav__item"> <a href="#works" class="nav__link"> Works </a></li>
-                    <li class="nav__item"> <a href="#contact" class="nav__link"> Contact </a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Chandler Hostetler</h1>
+      <h2>Software Developer</h2>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
-    <main class="l-main">
-      <!--Home Section-->
-      <section class="home" id="home">
-          <div class="home__container bd-grid">
-              <div class="home__data">
-                  <div class="home__img">
-                      <img src="img/nihory.png" alt="Chandler Hostetler" title="Chandler Hostetler">
-                  </div>
 
-                  <h1 class="home__title">Chandler Hostetler</h1>
-                  <span class="home__profession">Software Developer</span>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate aspiring software developer with a background in logistics, currently studying software development and looking to transition into IT. I love building things that make life easier and enjoy learning new technologies.</p>
+    </section>
 
-                  <div class="home__social">
-                      <a href="#" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
-                      <a href="#" class="home__social-link"><i class='bx bxl-github' ></i></a>
-                      <a href="#" class="home__social-link"><i class='bx bxl-facebook' ></i></a>
-                      <a href="#" class="home__social-link"><i class='bx bxl-behance' ></i></a>
-                  </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+        <li>Linux</li>
+      </ul>
+    </section>
 
-                  <a download="" href="#" class="button home__button">Download Resume</a>
-              </div>
-          </div>
-      </section>
-      <!--About Section-->
-      <section class="about section" id="about">
-        <span class="section-subtitle">My intro</span>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Task Manager App</h3>
+        <p>A simple web app to track tasks using JavaScript and localStorage.</p>
+        <p><a href="#">View on GitHub</a> | <a href="#">Live Demo</a></p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>This very site—built with HTML and CSS, showcasing my growth as a developer.</p>
+        <p><a href="#">View on GitHub</a></p>
+      </div>
+    </section>
 
-        <h2 class="section-subtitle">About Me</h2>
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <div class="item">
+        <h3>Job Title – Company</h3>
+        <p>Jan 2022 – Present</p>
+        <p>Description of your role, responsibilities, and achievements.</p>
+      </div>
+    </section>
 
-        <div class="about__container bd-grid">
-          <div class="about__data">
-            <p class="about __description">
-              <!--Add description here-->
-            </p>
-            <!--add About image here-->
-            <img src="" alt="" title="" class="about__img">
-        </div>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="item">
+        <h3>Certification Name</h3>
+        <p>Issuing Organization – Date</p>
+      </div>
+    </section>
 
-    <h1>Chandler Hostetler</h1>
-    <h2>Software Developer/IT Specialist</h2>
-    <p>Google and COMPTIA A+/F+ Certifications</p>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-twitter"></a>
-  </body>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Degree – University Name</h3>
+        <p>Year Graduated or Expected Graduation</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact / Resume</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+      <p>GitHub: <a href="#">github.com/yourusername</a></p>
+      <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
